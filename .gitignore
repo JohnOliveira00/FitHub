@@ -1,0 +1,3 @@
+node_modules/
+# Dados locais dos usuários (senhas já vão hasheadas)
+data/users.json

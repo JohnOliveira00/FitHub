@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Criar conta - FitHub</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="login-page">
+      <section class="login-card">
+        <img src="./logo.png" alt="Logo FitHub" class="logo" width="160" height="160" />
+
+        <h1>Criar conta</h1>
+        <p class="subtitle">Registre-se para poder entrar no FitHub</p>
+
+        <div id="msg" class="msg" role="alert" hidden></div>
+
+        <form class="login-form" id="form-register" novalidate>
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="seuemail@exemplo.com"
+            required
+            autocomplete="email"
+          />
+
+          <label for="senha">Senha</label>
+          <input
+            id="senha"
+            name="senha"
+            type="password"
+            placeholder="Mínimo 6 caracteres"
+            required
+            minlength="6"
+            autocomplete="new-password"
+          />
+
+          <label for="senha2">Confirmar senha</label>
+          <input
+            id="senha2"
+            name="senha2"
+            type="password"
+            placeholder="Repita a senha"
+            required
+            minlength="6"
+            autocomplete="new-password"
+          />
+
+          <button type="submit">Cadastrar</button>
+        </form>
+
+        <p class="form-footer">
+          Já tem conta? <a href="./index.html">Entrar</a>
+        </p>
+      </section>
+    </main>
+    <script src="./register.js"></script>
+  </body>
+</html>
