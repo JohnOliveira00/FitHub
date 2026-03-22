@@ -31,7 +31,7 @@
         return;
       }
 
-      showMessage(data.message || "Bem-vindo!", "ok");
+      showMessage(data.message || "Seja bem-vindo!", "ok");
     } catch {
       showMessage("Erro de conexão. Use http://localhost:3000 e rode npm start.", "err");
     }
