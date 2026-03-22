@@ -46,4 +46,4 @@ Como desenvolvedor focado na interface, minhas responsabilidades no projeto incl
 * **John Oliveira** 
 * **Adryan Targino** 
 * **Wendel Lucas** 
-* [cite_start]**Enzo Soares** 
+* **Enzo Soares** 
