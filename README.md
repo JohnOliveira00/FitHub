@@ -34,10 +34,10 @@ Como desenvolvedor focado na interface, minhas responsabilidades no projeto incl
 
 | Camada | Tecnologia |
 | :--- | :--- |
-| **Frontend** | [cite_start]React.js / Vue.js, Tailwind CSS / Bootstrap  |
-| **Backend** | [cite_start]Node.js / Python (Django ou Flask) |
-| **Banco de Dados** | [cite_start]SQL / NoSQL  |
-| **Ferramentas** | [cite_start]VS Code, Canva  |
+| **Frontend** | React.js / Vue.js, Tailwind CSS / Bootstrap  |
+| **Backend** | Node.js / Python (Django ou Flask) |
+| **Banco de Dados** | SQL / NoSQL  |
+| **Ferramentas** | VS Code, Canva  |
 
 ---
 
