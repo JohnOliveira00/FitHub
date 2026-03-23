@@ -1,4 +1,6 @@
-# 🏋️‍♂️ FitHub - Monitoramento e Direcionamento de Treinos
+#  FitHub - Monitoramento e Direcionamento de Treinos
+
+URL: https://fit-hub-tau.vercel.app/
 
 A **FitHub** é uma plataforma inovadora desenvolvida pela **Startup Fithub**  (**E.E.E.P. Comendador Miguel Gurgel**) que combina tecnologia e uma comunidade engajada para revolucionar a forma como os praticantes de calistenia monitoram e direcionam seus treinos.
 
@@ -6,10 +8,10 @@ O sistema funciona como um **hub completo**, integrando ferramentas de monitoram
 
 ---
 
-## 🎯 Objetivo do Projeto
+##  Objetivo do Projeto
 Oferecer acessibilidade e orientação profissional [cite: 30][cite_start], permitindo que qualquer pessoa, em qualquer lugar, tenha acesso a treinos personalizados de calistenia adaptados ao seu nível de experiência.
 
-## ✨ Funcionalidades Principais
+##  Funcionalidades Principais
 
 **Planos de Treino Personalizados:** Criação de rotinas baseadas em objetivos (força, hipertrofia, mobilidade) e nível de experiência.
 **Ajuste Automático:** O sistema sugere progressões e regressões conforme o desempenho do usuário.
@@ -19,7 +21,7 @@ Oferecer acessibilidade e orientação profissional [cite: 30][cite_start], perm
 
 ---
 
-## 👨‍💻 Meu Papel no Desenvolvimento (Front-end)
+##  Meu Papel no Desenvolvimento (Front-end)
 
 Como desenvolvedor focado na interface, minhas responsabilidades no projeto incluem:
 
@@ -30,7 +32,7 @@ Como desenvolvedor focado na interface, minhas responsabilidades no projeto incl
 
 ---
 
-## 🛠 Tecnologias e Ferramentas
+##  Tecnologias e Ferramentas
 
 | Camada | Tecnologia |
 | :--- | :--- |
