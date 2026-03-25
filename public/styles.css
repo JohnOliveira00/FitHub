@@ -76,8 +76,8 @@ input {
 }
 
 input:focus {
-  outline: 2px solid #771717;
-  border-color: #771717;
+  outline: 2px solid #E31D1A;
+  border-color: #E31D1A;
 }
 
 button {
@@ -98,7 +98,7 @@ display: block;
 
 button:hover {
  transform: translate(-3px, -3px);
-            box-shadow: 7px 7px 0px #0077b5; 
+            box-shadow: 7px 7px 0px #E31D1A; 
             background-color: #f0f7ff;
 }
 
