@@ -38,7 +38,7 @@ Como desenvolvedor focado na interface, minhas responsabilidades no projeto incl
 | :--- | :--- |
 | **Frontend** | React.js / Vue.js, Tailwind CSS / Bootstrap  |
 | **Backend** | Node.js / Python (Django ou Flask) |
-| **Banco de Dados** | SQL / NoSQL  |
+| **Banco de Dados** | Supabase (postgreeSQL)  |
 | **Ferramentas** | VS Code, Canva  |
 
 ---
