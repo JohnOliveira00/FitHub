@@ -1,7 +1,5 @@
 #  FitHub - Monitoramento e Direcionamento de Treinos
 
-URL: fit-hub-git-dev-johnoliveira00s-projects.vercel.app
-
 A **FitHub** é uma plataforma inovadora desenvolvida pela **Startup Fithub**  (**E.E.E.P. Comendador Miguel Gurgel**) que combina tecnologia e uma comunidade engajada para revolucionar a forma como os praticantes de calistenia monitoram e direcionam seus treinos.
 
 O sistema funciona como um **hub completo**, integrando ferramentas de monitoramento, personalização de treinos e interação social em um único lugar.

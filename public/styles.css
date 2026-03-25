@@ -3,9 +3,9 @@
   --card: #ffffff;
   --text: #1f2937;
   --muted: #6b7280;
-  --primary: #2563eb;
-  --primary-hover: #1d4ed8;
-  --border: #d1d5db;
+  --primary: #771717;
+  --primary-hover: #771717;
+  --border: #000000;
 }
 
 * {
@@ -14,10 +14,24 @@
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(135deg, #eef2ff, var(--bg));
-  color: var(--text);
+    padding: 0;
+    background-image: url('fithub_scroll.gif');
+    background-size: cover;
+    font-family: 'Inter', sans-serif;
+    background-repeat: repeat-y; /* importante pra repetir vertical */
+    background-position: top center;
 }
+
+/* animação */
+@keyframes scrollBg {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50%);
+    }
+}
+
 
 .login-page {
   min-height: 100vh;
@@ -33,7 +47,7 @@ body {
   border: 1px solid #e5e7eb;
   border-radius: 16px;
   padding: 28px 24px;
-  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+  box-shadow: 16px 16px 0px #020203;
 }
 
 .logo {
@@ -76,25 +90,32 @@ input {
 }
 
 input:focus {
-  outline: 2px solid #93c5fd;
-  border-color: #60a5fa;
+  outline: 2px solid #E31D1A;
+  border-color: #E31D1A;
 }
 
 button {
-  margin-top: 8px;
-  border: none;
-  border-radius: 10px;
-  background: var(--primary);
-  color: white;
-  font-size: 1rem;
-  font-weight: 700;
-  padding: 12px;
-  cursor: pointer;
+display: block;
+            background: #fff;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 14px;
+            margin-bottom: 15px;
+            border-radius: 12px;
+            border: 2px solid #000;
+            box-shadow: 4px 4px 0px #000;
+            transition: 0.2s;
+  
 }
 
+
 button:hover {
-  background: var(--primary-hover);
+ transform: translate(-3px, -3px);
+            box-shadow: 7px 7px 0px #E31D1A; 
+            background-color: #fbeeee;
 }
+
 
 .form-footer {
   margin: 18px 0 0;
@@ -121,13 +142,13 @@ button:hover {
 }
 
 .msg--err {
-  background: #fef2f2;
-  color: #b91c1c;
-  border: 1px solid #fecaca;
+  background: #ffffff;
+  color: #771717;
+  border: 1px solid #ffffff;
 }
 
 .msg--ok {
   background: #ecfdf5;
-  color: #047857;
-  border: 1px solid #a7f3d0;
+  color: #ff1414;
+  border: 1px solid #000000;
 }
