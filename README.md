@@ -43,7 +43,7 @@ Como desenvolvedor focado na interface, minhas responsabilidades no projeto incl
 
 ---
 
-## 👥 Equipe (Startup Fithub)
+## Equipe (Startup Fithub)
 * **Jayro Caetano** 
 * **John Oliveira** 
 * **Adryan Targino** 
