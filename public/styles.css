@@ -14,10 +14,24 @@
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(135deg, #eef2ff, var(--bg));
-  color: var(--text);
+    padding: 0;
+    background-image: url('fithub_scroll.gif');
+    background-size: cover;
+    font-family: 'Inter', sans-serif;
+    background-repeat: repeat-y; /* importante pra repetir vertical */
+    background-position: top center;
 }
+
+/* animação */
+@keyframes scrollBg {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50%);
+    }
+}
+
 
 .login-page {
   min-height: 100vh;
@@ -99,7 +113,7 @@ display: block;
 button:hover {
  transform: translate(-3px, -3px);
             box-shadow: 7px 7px 0px #E31D1A; 
-            background-color: #f0f7ff;
+            background-color: #fbeeee;
 }
 
 
