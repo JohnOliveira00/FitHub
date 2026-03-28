@@ -9,7 +9,7 @@ O sistema funciona como um **hub completo**, integrando ferramentas de monitoram
 ---
 
 ##  Objetivo do Projeto
-Oferecer acessibilidade e orientação profissional [cite: 30][cite_start], permitindo que qualquer pessoa, em qualquer lugar, tenha acesso a treinos personalizados de calistenia adaptados ao seu nível de experiência.
+Oferecer acessibilidade e orientação profissional, permitindo que qualquer pessoa, em qualquer lugar, tenha acesso a treinos personalizados de calistenia adaptados ao seu nível de experiência.
 
 ##  Funcionalidades Principais
 
