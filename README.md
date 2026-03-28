@@ -19,16 +19,6 @@ Oferecer acessibilidade e orientação profissional [cite: 30][cite_start], perm
 **Acompanhamento de Progresso:** Armazenamento de dados com relatórios sobre volume de treino e evolução técnica.
 * **Comunidade e Gamificação:** Espaço social para compartilhar conquistas, participar de desafios e sistema de rankings.
 
----
-
-##  Meu Papel no Desenvolvimento (Front-end)
-
-Como desenvolvedor focado na interface, minhas responsabilidades no projeto incluem:
-
-**Desenvolvimento de Interface:** Criação da estrutura e interatividade das páginas utilizando **HTML5**, **CSS3** e **JavaScript**.
-**Frameworks Modernos:** Implementação de interfaces dinâmicas com **React.js** ou **Vue.js**.
-* **Design Responsivo:** Uso de **Tailwind CSS** ou **Bootstrap** para garantir que a plataforma seja acessível em qualquer dispositivo.
-* **Ferramentas de Design:** Integração de elementos visuais e banners desenvolvidos no **Canva**.
 
 ---
 
