@@ -1,3 +1,4 @@
+// Abrir/Fechar a aba da semana
 function toggleWeek(num) {
     const card = document.getElementById(`week-${num}`);
     if (!card.classList.contains('locked')) {
@@ -5,11 +6,13 @@ function toggleWeek(num) {
     }
 }
 
+// Marcar/Desmarcar exercício
 function toggleExercise(element, weekNum) {
     element.classList.toggle('done');
     checkWeekProgress(weekNum);
 }
 
+// Verificar se todos os exercícios da semana foram feitos
 function checkWeekProgress(weekNum) {
     const list = document.getElementById(`list-${weekNum}`);
     const total = list.querySelectorAll('.exercise-item').length;
@@ -25,6 +28,7 @@ function checkWeekProgress(weekNum) {
     }
 }
 
+// Finalizar semana e liberar a próxima
 function finishWeek(num) {
     const current = document.getElementById(`week-${num}`);
     current.classList.remove('open', 'active');
