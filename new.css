@@ -1,0 +1,128 @@
+:root {
+    --primary: #771717;
+    --bg: #f4f4f4;
+    --black: #000000;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg);
+    padding: 20px;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.title { text-align: center; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2px; }
+
+.card {
+    background: #fff;
+    border: 3px solid var(--black);
+    border-radius: 12px;
+    box-shadow: 6px 6px 0px var(--black);
+    margin-bottom: 20px;
+    transition: 0.2s;
+}
+
+.card.locked { opacity: 0.6; filter: grayscale(1); cursor: not-allowed; }
+
+.card-header { padding: 20px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; }
+
+.status-icon::before { font-family: "Font Awesome 6 Free"; font-weight: 900; }
+.card.locked .status-icon::before { content: "\f023"; color: #e74c3c; }
+.card.active .status-icon::before { content: "\f3c1"; color: var(--primary); }
+.card.finished .status-icon::before { content: "\f058"; color: var(--primary); }
+
+.week-content {
+    display: none;
+    padding: 20px;
+    border-top: 3px solid var(--black);
+    background: #fafafa;
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+
+.card.open .week-content { display: block; }
+
+.exercise-list { list-style: none; padding: 0; }
+
+.exercise-item {
+    display: block;
+    padding: 18px;
+    background: #fff;
+    margin-bottom: 15px;
+    border: 3px solid var(--black);
+    border-radius: 12px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 4px 4px 0px var(--black); /* Sombra inicial */
+    transform: translateY(0);
+    transition: all 0.15s ease;
+    user-select: none;
+}
+
+.exercise-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px 10px 0px var(--primary);
+}
+
+.exercise-item:active, .exercise-item.done {
+    transform: translateY(4px);
+    box-shadow: 0px 0px 0px var(--black);
+}
+
+.exercise-item.done {
+    background: var(--primary);
+    text-decoration: line-through;
+}
+
+.btn-finish {
+    width: 100%;
+    padding: 14px;
+    background: #ffffff; /* Fundo sempre branco */
+    color: #000000; /* Texto sempre preto */
+    
+    border: 3px solid #000000; 
+    border-radius: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+    
+    position: relative;
+    box-shadow: 4px 4px 0px #000000; /* Sombra vermelha base */
+    transform: translateY(0); /* Posição inicial */
+    transition: all 0.2s ease; 
+    cursor: pointer;
+}
+
+.btn-finish:enabled:hover {
+    background: #ffffff; /* Mantém branco */
+    border: 3px solid #000000; /* Mantém a borda preta */
+    
+    /* O botão SOBE e a sombra VERMELHA aumenta */
+    transform: translateY(-8px); 
+    box-shadow: 10px 10px 0px #771717; 
+}
+
+.btn-finish:enabled:active {
+    /* O botão "desce" e a sombra some para simular o clique */
+    transform: translateY(4px);
+    box-shadow: 0px 0px 0px #000000;
+    transition: all 0.05s;
+}
+
+.btn-finish:disabled {
+    background: #eeeeee;
+    border-color: #bbbbbb; /* Borda fica cinza quando travado */
+    color: #999999;
+    box-shadow: none;
+    cursor: not-allowed;
+    transform: none;
+}

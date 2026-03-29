@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitHub - Cronograma de Treino</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+
+<div class="dashboard">
+    <h2>Meu Progresso FitHub</h2>
+
+    <div class="card active" id="week-1">
+        <div class="card-header" onclick="toggleWeek(1)">
+            <h3>Semana 1</h3>
+            <span class="status-icon"></span>
+        </div>
+        <div class="week-content">
+            <ul class="exercise-list" id="list-1">
+                <li class="exercise-item" onclick="toggleExercise(this, 1)">
+                    <span>Flexões (3x10)</span>
+                </li>
+                <li class="exercise-item" onclick="toggleExercise(this, 1)">
+                    <span>Agachamentos (3x15)</span>
+                </li>
+            </ul>
+            <button id="btn-1" class="btn-finish" disabled onclick="finishWeek(1)">Concluir Semana 1</button>
+        </div>
+    </div>
+
+    <div class="card locked" id="week-2">
+        <div class="card-header" onclick="toggleWeek(2)">
+            <h3>Semana 2</h3>
+            <span class="status-icon"></span>
+        </div>
+        <div class="week-content">
+            <ul class="exercise-list" id="list-2">
+                <li class="exercise-item" onclick="toggleExercise(this, 2)">
+                    <span>Barra Fixa (3x5)</span>
+                </li>
+                <li class="exercise-item" onclick="toggleExercise(this, 2)">
+                    <span>Afundo (3x12)</span>
+                </li>
+            </ul>
+            <button id="btn-2" class="btn-finish" disabled onclick="finishWeek(2)">Concluir Semana 2</button>
+        </div>
+    </div>
+
+    <div class="card locked" id="week-3">
+        <div class="card-header" onclick="toggleWeek(3)">
+            <h3>Semana 3</h3>
+            <span class="status-icon"></span>
+        </div>
+        <div class="week-content">
+            <ul class="exercise-list" id="list-3">
+                <li class="exercise-item" onclick="toggleExercise(this, 3)">
+                    <span>Barra Fixa (3x5)</span>
+                </li>
+                <li class="exercise-item" onclick="toggleExercise(this, 3)">
+                    <span>Afundo (3x12)</span>
+                </li>
+            </ul>
+            <button id="btn-3" class="btn-finish" disabled onclick="finishWeek(3)">Concluir Semana 3</button>
+        </div>
+    </div>
+<div class="card locked" id="week-4">
+        <div class="card-header" onclick="toggleWeek(4)">
+            <h3>Semana 4 </h3>
+            <span class="status-icon"></span>
+        </div>
+        <div class="week-content">
+            <ul class="exercise-list" id="list-4">
+                <li class="exercise-item" onclick="toggleExercise(this, 4)">
+                    <span>Flexão Plantar (4x15)</span>
+                </li>
+                <li class="exercise-item" onclick="toggleExercise(this, 4)">
+                    <span>Levantamento Terra (3x10)</span>
+                </li>
+            </ul>
+            <button id="btn-4" class="btn-finish" disabled onclick="finishWeek(4)">Concluir Semana 4</button>
+        </div>
+    </div>
+</div>
+
+<script src="new.js"></script>
+</body>
+</html> 
