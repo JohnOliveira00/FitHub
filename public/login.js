@@ -1,3 +1,11 @@
+import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
+
+// 🔥 suas credenciais
+const SUPABASE_URL = "https://lptszaqkrxtliupaostb.supabase.co";
+const SUPABASE_ANON_KEY = "sb_publishable_gyo5MIvp_QxOMuCBjrq7zw_ISxaDiPS";
+
+const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
 (function () {
   const form = document.getElementById("form-login");
   const msg = document.getElementById("msg");
@@ -15,25 +23,22 @@
     const email = document.getElementById("email").value.trim();
     const senha = document.getElementById("senha").value;
 
-    try {
-      const res = await fetch("/api/login", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, senha }),
-      });
-      const data = await res.json().catch(() => ({}));
+    // 🔐
+    const { data, error } = await supabase.auth.signInWithPassword({
+      email: email,
+      password: senha,
+    });
 
-      if (!res.ok) {
-        showMessage(
-          data.message || "Não foi possível entrar. Verifique email e senha.",
-          "err"
-        );
-        return;
-      }
-
-      showMessage(data.message || "Seja bem-vindo!", "ok");
-    } catch {
-      showMessage("Erro de conexão. Use http://localhost:3000 e rode npm start.", "err");
+    if (error) {
+      showMessage("Email ou senha inválidos.", "err");
+      return;
     }
+
+    showMessage("Login realizado com sucesso!", "ok");
+
+    // 🚀 redirecionar (opcional)
+    setTimeout(() => {
+      window.location.href = "dashboard.html";
+    }, 1000);
   });
 })();
